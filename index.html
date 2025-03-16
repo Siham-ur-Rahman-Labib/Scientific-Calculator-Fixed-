@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <input id="display" class="display" type="text" disabled placeholder="0">
+            <div class="buttons">
+                <!-- Numeric buttons -->
+                <button class="btn" id="btn-7">7</button>
+                <button class="btn" id="btn-8">8</button>
+                <button class="btn" id="btn-9">9</button>
+                <button class="btn operator" id="btn-divide">/</button>
+
+                <button class="btn" id="btn-4">4</button>
+                <button class="btn" id="btn-5">5</button>
+                <button class="btn" id="btn-6">6</button>
+                <button class="btn operator" id="btn-multiply">*</button>
+
+                <button class="btn" id="btn-1">1</button>
+                <button class="btn" id="btn-2">2</button>
+                <button class="btn" id="btn-3">3</button>
+                <button class="btn operator" id="btn-subtract">-</button>
+
+                <button class="btn" id="btn-0">0</button>
+                <button class="btn" id="btn-dot">.</button>
+                <button class="btn" id="btn-equal">=</button>
+                <button class="btn operator" id="btn-add">+</button>
+
+                <!-- Scientific buttons -->
+                <button class="btn func" id="btn-sin">sin</button>
+                <button class="btn func" id="btn-cos">cos</button>
+                <button class="btn func" id="btn-tan">tan</button>
+                <button class="btn func" id="btn-sqrt">√</button>
+                <button class="btn func" id="btn-square">x²</button>
+                <button class="btn func" id="btn-cube">x³</button>
+                <button class="btn func" id="btn-pi">π</button>
+                <button class="btn func" id="btn-e">e</button>
+
+                <!-- Memory & Clear -->
+                <button class="btn clear" id="btn-clear">C</button>
+                <button class="btn history" id="btn-history">History</button>
+            </div>
+            <div id="history" class="history"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
