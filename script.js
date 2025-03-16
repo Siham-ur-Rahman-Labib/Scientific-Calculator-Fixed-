@@ -1,6 +1,8 @@
 let display = document.getElementById("display");
 let historyContainer = document.getElementById("history");
 let history = [];
+let aboutUsModal = document.getElementById("about-us-modal");
+let closeModal = document.getElementById("close-modal");
 
 // Event listener for button clicks
 document.querySelectorAll(".btn").forEach((btn) => {
@@ -25,6 +27,8 @@ function handleClick(event) {
         display.value = "";
     } else if (buttonValue === "History") {
         toggleHistory();
+    } else if (buttonValue === "About Us") {
+        showAboutUs();
     } else {
         display.value += buttonValue;
     }
@@ -71,6 +75,16 @@ function updateHistory() {
 // Toggle history display
 function toggleHistory() {
     historyContainer.style.display = historyContainer.style.display === "block" ? "none" : "block";
+}
+
+// Show the About Us modal
+function showAboutUs() {
+    aboutUsModal.style.display = "flex";
+}
+
+// Close the About Us modal
+closeModal.onclick = function () {
+    aboutUsModal.style.display = "none";
 }
 
 // Prevent multiple clicks in quick succession
